@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-WASTE MANAGEMENT</title>
-  <link rel="stylesheet" href="style.css" >
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Waste Uganda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>E-WASTE UGANDA </h1>
-    <span> &#9776</span>
-</div>
-
-    <div class="display">
-        <p>Empowering Communities for a Cleaner Future</p>
-        <model-viewer src="fullOnEwaste.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
-            <button class="Hotspot" slot="hotspot-1" data-surface="9 0 74 77 80 0.093 0.188 0.719" data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">How to recycle E-Waste
-                </div>
-            </button><button class="Hotspot" slot="hotspot-2" data-surface="1 0 2463 2453 2671 0.433 0.513 0.053" data-visibility-attribute="visible">
-                <div class="HotspotAnnotation">The dangers of improper E-waste disposal</div>
-            </button>
-            <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-            </div>
-            <button slot="ar-button" id="ar-button">
-                View in your space
-            </button>
-      
-        </model-viewer>
-        
+  <header>
+    <div class="header-content">
+      <img src="uganda-national-flag.png" alt="Uganda Flag" class="uganda-flag">
+      <h1>E-WASTE UGANDA</h1>
+      <p>Empowering Communities for a Cleaner Future</p>
+      <button class="menu-button">☰</button>
     </div>
+  </header>
+
+  <main>
+   
+    <section class="cards-container">
+      <div class="card"><img src="image1.jpg" alt="Image 1"><button>What is E-waste</button></div>
+      <div class="card"><img src="image2.jpg" alt="Image 2"><button>Importance of E-waste Management</button></div>
+      <div class="card"><img src="image3.jpg" alt="Image 3"><button>How to dispose off E-waste</button></div>
+      <div class="card"><img src="image4.jpg" alt="Image 4"><button>Reduce, Reuse, Recycle (3R)</button></div>
+      <div class="card"><img src="image5.jpg" alt="Image 5"><button>E-waste and Innovation</button></div>
+      <div class="card"><img src="image6.jpg" alt="Image 6"><button>How to get involved</button></div>
+      <div class="card"><img src="image7.jpg" alt="Image 7"> <button>Reduce, Reuse, Recycle (3R)</button></div>
+      <div class="card"><img src="image8.jpg" alt="Image 8"><button>E-waste and Innovation</button></div>
+      <!-- Larger last card -->
+      <div class="card card-large">
+        <img src="image9.jpg" alt="Image 9" id="image9">
+        <button onclick="window.location.href='model.html';"> how to dispose off E-waste </button>
+      </div>
+    </section>
+  
+    <section class="about-section">
+      <h2>About</h2>
+      <p>
+        The e-waste Uganda is an educational and interactive platform aimed at
+        raising awareness about the challenges of electronic waste in Uganda.
+        It provides a comprehensive database of information on the proper
+        disposal, recycling, and management of e-waste, catering to
+        individuals, businesses, and recycling professionals.
+      </p>
+    </section>
+
+    <button class="scroll-to-top">↑</button>
+  </main>
+
+  <script>
+    // Scroll to Top Functionality
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
