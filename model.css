@@ -45,10 +45,6 @@ header .back-button {
   max-width: 1400px;
   aspect-ratio: 16 / 9;
   position: relative;
-  background-color: #EDEDED;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   margin: 2rem auto;
   display: flex;
   justify-content: center;
@@ -116,7 +112,7 @@ model-viewer {
   }
 
   #ar-button {
-    font-size: 1.5rem;
+    font-size: 20px;
     padding: 1.2rem 1.8rem;
     color:#ffff;
     text-align:center;
@@ -144,7 +140,7 @@ model-viewer {
   }
 
   #ar-button {
-    font-size: 1.7rem;
+    font-size: 25px;
     padding: 1.5rem 2rem;
     margin: 0 auto;
     color:#fff;
