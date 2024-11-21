@@ -121,7 +121,9 @@ model-viewer {
   #ar-button {
     font-size: 1.5rem;
     padding: 1.2rem 1.8rem;
+    color:#333;
   }
+ 
 }
 
 @media (min-width: 1200px) {
