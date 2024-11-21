@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Screen</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="model.css">
+</head>
+<body>
+  <div class="next-screen">
+    <header>
+      <button class="back-button" onclick="window.location.href='index.html';">  &larr;</button>
+      <h1>Interactive model</h1>
+    </header>
+    <main>
+      <div class="modal-viewer">
+        <model-viewer
+          src="fullOnEwaste.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+          autoplay
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-surface="9 0 74 77 80 0.093 0.188 0.719"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">How to recycle E-Waste</div>
+          </button>
+          <button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-surface="1 0 2463 2453 2671 0.433 0.513 0.053"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              The dangers of improper E-waste disposal
+            </div>
+          </button>
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+        </model-viewer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
