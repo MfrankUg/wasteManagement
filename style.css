@@ -1,4 +1,4 @@
-/* Reset styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -87,9 +87,8 @@
     padding: 0.5rem;
     font-size: 0.9rem;
     font-weight: bold;
-    background: linear-gradient(to right, #8b0000, #d3d3d3);
     color: #000;
-    border: 2px solid #8b0000;
+    border: 2px solid #141414;
     border-radius: 8px;
     cursor: pointer;
     display: block;
@@ -138,14 +137,14 @@
     font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: none; /* Initially hidden */
+    display: none; 
   }
   
   .scroll-to-top:hover {
     background: #c9302c;
   }
   
-  /* Responsive Design */
+
   @media (min-width: 768px) {
     .header-content h1 {
       font-size: 2rem;
@@ -156,26 +155,25 @@
     }
   }
   
-  /* Responsive Design */
+
 @media (min-width: 768px) {
   .cards-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets and small desktops */
-  }
+    grid-template-columns: repeat(3, 1fr); 
 
   .card-large {
-    grid-column: span 3; /* Large card spans 3 columns */
+    grid-column: span 3; 
   }
 }
 
 @media (min-width: 1024px) {
   .cards-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger desktops */
+    grid-template-columns: repeat(4, 1fr); 
     align-items: center;
     margin: 0 auto;
   }
 
   .card-large {
-    grid-column: span 1.5; /* Large card spans 4 columns */
+    grid-column: span 1.5; 
   }
 }
  
@@ -185,61 +183,61 @@
   }
 }
 
-/* Default styling for all screen sizes */
+
 #image9 {
-  grid-column: span 2; /* Span two columns for larger screens */
-  width: 90%; /* Slightly smaller size */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image */
+  grid-column: span 2; 
+  width: 90%; 
+  height: auto; 
+  margin: 0 auto; 
 }
 
-/* Adjust Image 9 specifically for desktop screens */
+
 @media (min-width: 1024px) {
   #image9 {
-    width: 60%; /* Reduce the width further for desktop */
-    grid-column: span 1; /* Optional: Change column span if needed */
+    width: 60%; 
+    grid-column: span 1; 
   }
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
   #image9 {
-    width: 100%; /* Make it fill its container on smaller screens */
-    grid-column: span 1; /* Ensure it spans one column */
+    width: 100%; 
+    grid-column: span 1; 
   }
 }
 
 
 #image9 + button {
   font-size: 0.9rem; 
-  padding: 0.5rem 1rem; /* Adjust padding for a smaller button */
-  width: 80%; /* Make the button smaller in width */
-  margin: 10px auto; /* Center the button below the image */
-  border-radius: 5px; /* Add rounded corners */
-  background-color: #d9534f; /* Set the background color */
-  color: #fff; /* White text color */
-  border: 2px solid  #8b0000; /* Remove border */
-  cursor: pointer; /* Add cursor pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  padding: 0.5rem 1rem; 
+  width: 80%; 
+  margin: 10px auto; 
+  border-radius: 5px; 
+   
+  color: #fff; 
+  border: 2px solid  #141414; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
-/* Hover effect for the button */
+
 #image9 + button:hover {
-  background-color: #c9302c; /* Darken the background on hover */
+  background-color: #c9302c; 
 }
 
-/* Adjustments for desktop screens */
+
 @media (min-width: 1024px) {
   #image9 + button {
-    font-size: 1rem; /* Make text slightly larger on larger screens */
-    width: 30%; /* Adjust button size for desktop */
+    font-size: 1rem; 
+    width: 30%;
   }
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
   #image9 + button {
-    font-size: 0.8rem; /* Reduce text size on smaller screens */
-    width: 30%; /* Ensure the button fills most of the container on smaller screens */
+    font-size: 0.8rem; 
+    width: 30%; 
   }
 }
