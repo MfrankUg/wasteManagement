@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: 'Sora', sans-serif;
   margin: 0;
@@ -8,12 +8,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* Prevents unnecessary scrolling */
+  overflow: hidden; 
 }
 
-/* Header */
 header {
-  position: sticky; /* Keeps the header at the top while scrolling */
+  position: sticky; 
   top: 0;
   left: 0;
   width: 100%;
@@ -21,9 +20,9 @@ header {
  
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between the back button and title */
+  justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 100; /* Ensures the header stays on top */
+  z-index: 100; 
 }
 
  h1 {
@@ -42,11 +41,10 @@ header .back-button {
   color: #000;
 }
 
-/* Modal Viewer Container */
 .modal-viewer {
-  width: 100%; /* Take up most of the screen width */
-  max-width: 1400px; /* Allow larger size on desktops */
-  aspect-ratio: 16 / 9; /* Widescreen ratio for a better user experience */
+  width: 100%; 
+  max-width: 1400px;
+  aspect-ratio: 16 / 9;
   position: relative;
   background-color: #EDEDED;
   border-radius: 20px;
@@ -59,39 +57,37 @@ header .back-button {
   height: 700px;
 }
 
-/* <model-viewer> Element */
 model-viewer {
   width: 100%;
   height: 1500px;
   border-radius: 20px;
-  object-fit: cover; /* Ensures the model scales properly */
+  object-fit: cover;
 }
 
-/* Hotspots Styling */
 .Hotspot {
   display: inline-block;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 0.8rem 1.2rem;
   border-radius: 10px;
-  font-size: 1.2rem; /* Increased size for better visibility */
+  font-size: 1.2rem; 
   pointer-events: all;
   position: absolute;
 }
 
 .HotspotAnnotation {
-  font-size: 1.3rem; /* Increased annotation size */
+  font-size: 1.3rem; 
   text-align: center;
 }
 
-/* AR Button */
 #ar-button {
+  
   display: inline-block;
-  margin-top: 1rem;
+  margin:0 auto;
   padding: 1rem 1.5rem;
   background-color: #000;
   color: #fff;
-  font-size: 1.2rem; /* Larger button text */
+  font-size: 1.2rem; 
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -101,10 +97,10 @@ model-viewer {
   background-color: #333;
 }
 
-/* Responsive Adjustments */
+
 @media (min-width: 768px) {
   .modal-viewer {
-    width: 100%; /* Larger on tablets */
+    width: 100%;
     max-width: 1600px;
     aspect-ratio: 16 / 9;
   }
@@ -128,7 +124,7 @@ model-viewer {
 
 @media (min-width: 1200px) {
   .modal-viewer {
-    width: 100%; /* Even larger on desktops */
+    width: 100%; 
     max-width: 1800px;
   }
 
@@ -144,5 +140,6 @@ model-viewer {
   #ar-button {
     font-size: 1.7rem;
     padding: 1.5rem 2rem;
+    margin: 0 auto;
   }
 }
